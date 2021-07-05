@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Application Store</h1>
+
+  <div class="section-one">
+    <div class="container">
+      <img src="./img/phone.png" alt="iphone">
+      <p class="description">
+        Available: 
+        <span id="count" class="count"></span>
+      </p>
+      <button id="buy-phone" class="buy-button">Buy</button>
+    </div>
+    
+    <div class="container">
+      <img src="./img/tablet.png" alt="tablets">
+      <p class="description">
+        Available: 
+        <span id="count-tab" class="count"></span>
+      </p>
+      <button id="buy-tablet" class="buy-button">Buy</button>
+    </div>
+  </div>
+  
+  <!-- Import redux -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- My JS -->
+  <script src="./app.js"></script>
+</body>
+</html>

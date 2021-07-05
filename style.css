@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 18em;
+}
+
+.section-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  border: 1px dotted gray;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.buy-button {
+  width: 100%;
+  padding: .6rem;
+  color: #fff;
+  border-radius: .2rem;
+  background-color: #535c68;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.count {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 760px) {
+  .section-one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
