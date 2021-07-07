@@ -124,6 +124,6 @@ store.subscribe(() => {
   }
 
   if(store.getState().tvs.tv === 0) {
-    tablet.style.display = 'none'
+    tv.style.display = 'none'
   }
 })
