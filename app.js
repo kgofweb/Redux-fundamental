@@ -9,22 +9,20 @@ function buyPhone() {
   }
 }
 
-function buyTablet () {
+function buyTablet() {
   return {
     type: BUY_TABLET
   }
 }
-
 // Reducer est function qui vas nous retourner un nouveau state
-// (prevState, action) => newState()
 
 // Init state
-const initialState = {
+const initState = {
   phones: 5,
   tablet: 10
 }
 
-const reducer = (state = initialState, action) => {
+const reducer = (state = initState, action) => {
   switch (action.type) {
     case BUY_PHONE: 
       return {
@@ -55,6 +53,7 @@ const tablet = document.getElementById('buy-tablet');
 let storedPhone = store.getState().phones;
 let storedTablet = store.getState().tablet;
 
+// Insert in HTML
 availablePhone.innerHTML = storedPhone;
 availableTablet.innerHTML = storedTablet;
 
@@ -67,13 +66,16 @@ tablet.addEventListener('click', () => {
   store.dispatch(buyTablet())
 })
 
+// Subscribe method
 store.subscribe(() => {
   availablePhone.innerHTML = store.getState().phones
   availableTablet.innerHTML = store.getState().tablet
 
   if(store.getState().phones === 0) {
     phone.style.display = 'none'
-  } else if (store.getState().tablet === 0) {
+  }
+  
+  if (store.getState().tablet === 0) {
     tablet.style.display = 'none'
   }
 })

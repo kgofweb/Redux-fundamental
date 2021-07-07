@@ -15,9 +15,8 @@ img {
 
 .section-one {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 60%;
+  justify-content: space-around;
+  width: 70%;
   margin: auto;
 }
 
@@ -27,8 +26,8 @@ img {
   justify-content: center;
   flex-direction: column;
   width: 350px;
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: 1rem auto;
+  padding: .9rem;
   text-align: center;
   border: 1px dotted gray;
 }
